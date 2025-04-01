@@ -54,29 +54,57 @@ select count(stu_name),city from Students
 group by city
 HAVING COUNT(stu_name) > 0; 
 -- Find courses with more than 2 enrollments where the enrollment date is after '2024-01-01'.
-select cou
+select cou_id ,count(enr_id ) from enrollements
+where enr_dat > '2024-01-01'
+group by cou_id
+HAVING COUNT(enr_id) > 2;
 -- Combining ORDER BY with GROUP BY
 -- Show cities along with the number of students in each city, sorted by student count descending.
-
+select city,count(stu_id) from Students
+group by city
+order by count(stu_id) desc;
 -- Retrieve courses along with enrollment count, sorted by enrollment count descending.
-
+select cou_id , count(enr_id) as tot_enrollments from enrollements
+group by cou_id
+order by tot_enrollments desc;
 -- Find the gender with the highest number of students, sorting by student count descending.
-
+select count(gender) from Students
+group by gender
+order by gender desc;
 -- Display the number of students per city, sorted alphabetically by city name.
-
+select city,count(stu_id) as tot_students from Students
+group by city
+order by city;
 -- List years along with the count of students born in each year, sorted by the most recent year first.
-
+select year(dob),count(stu_id) from Students
+group by year(dob)
+order by year(dob) desc;
 -- Combining LIMIT with GROUP BY and HAVING
 -- Show the top 3 cities with the most students.
-
+select city,count(stu_id) from Students
+group by city
+order by count(stu_id) desc
+limit 3;
 -- Retrieve the first 2 courses with the most enrollments.
+select cou_id,count(enr_id) as num_of_enrollments from enrollements
+group by cou_id
+HAVING COUNT(enr_id) >= 3 
+order by num_of_enrollments desc
+limit 2;
 
 -- Get the top 5 years where the highest number of students were born.
-
+select year(dob),count(stu_id) from Students
+group by year(dob)
+order by count(stu_id) desc
+limit 5;
 -- Find the 3 cities with more than 2 students, sorted by count descending.
-
+select city,count(stu_id) as tot_students from Students
+group by city
+having count(stu_id)>2
+order by tot_students desc
+limit 3
 -- Display the top 2 courses where enrollments are more than 3, ordered by course name.
-
+-- need joins
 
 
 
