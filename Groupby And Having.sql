@@ -16,26 +16,45 @@ select Year(dob),count(stu_id) from Students group by Year(dob);
 select cou_id,count(stu_id) from enrollements group by cou_id;
 -- Using HAVING with Aggregation
 -- List cities that have more than 3 students.
-
+select city, count(city) as num_of_students from Students 
+group by city
+having count(city) = 3;
 -- Display courses that have at least 2 enrollments.
+select cou_id ,count(enr_id) as no_of_enrollments from enrollements
+group by cou_id
+having count(enr_id) >= 5;
 
 -- Find the years where more than 5 students were born.
-
+select year(dob),count(year(dob)) from Students 
+group by year(dob)
+having  count(year(dob)) >5;
 -- Show courses where the total number of credits assigned is greater than 10.
+select cou_name,sum(credits) from courses
+group by cou_name;  -- need JOINS  
 
 -- Retrieve gender groups (M and F) where the number of students is at least 5.
-
+select gender,count(gender) from Students
+group by gender
+having count(gender) > 12;
 -- Combining GROUP BY with WHERE
--- Count students in each city where the city is NOT 'Delhi'.
+-- Count students in each city where the city is NOT Delhi.
+select city,count(stu_id) from Students
+where city <> 'Delhi'
+group by city;
 
 -- Find the number of enrollments per course for courses with credits greater than 2.
-
+select cou_id; -- NEED JOINS
 -- Display the total number of students born after 2000, grouped by gender.
-
+select gender,count(year(dob)) from Students
+where year(dob) >2000
+group by gender;
 -- List students per city only for cities that have a student with phone number starting with '98'.
-
+select count(stu_name),city from Students
+ where phone like "98%"
+group by city
+HAVING COUNT(stu_name) > 0; 
 -- Find courses with more than 2 enrollments where the enrollment date is after '2024-01-01'.
-
+select cou
 -- Combining ORDER BY with GROUP BY
 -- Show cities along with the number of students in each city, sorted by student count descending.
 
