@@ -1,0 +1,188 @@
+Here are some SQL practice questions based on your Tollywood movie database, focusing on WHERE, ORDER BY, GROUP BY, HAVING, LIMIT, and LIKE:
+
+WHERE Clause Questions
+Retrieve all movies released after the year 2015.
+
+Get details of all movies where the budget is greater than ₹100,000,000.
+
+Find all action movies.
+
+List all actors born after 1990.
+
+Get all reviews where the rating is greater than 8.
+
+Retrieve all movies composed by M. M. Keeravani.
+
+Find all producers with nationality "Indian".
+
+Get details of movies where box office collection is less than budget (flops).
+
+Find all movies directed by S.S. Rajamouli.
+
+List all awards won by movies in 2022.
+
+ORDER BY Clause Questions
+Retrieve all movies ordered by release_date in descending order.
+
+Display movies in ascending order of box office collection.
+
+List actors in descending order of their debut year.
+
+Show the top 5 movies with the highest budget.
+
+List producers ordered by their birth_date in ascending order.
+
+Show all reviews ordered by rating from highest to lowest.
+
+Retrieve music composers ordered alphabetically by name.
+
+Get the list of movies sorted by genre, then by release_date.
+
+Show all actors sorted by their name in reverse alphabetical order.
+
+Display the box office collections sorted by region and collection in descending order.
+
+GROUP BY Clause Questions
+Count the number of movies in each genre.
+
+Find the total box office collection for each language.
+
+Count how many movies each director has directed.
+
+Show the number of awards won by each movie.
+
+Count the number of movies produced by each producer.
+
+Find the total number of reviews given to each movie.
+
+Get the number of movies featuring each actor.
+
+Display the number of awards won per award year.
+
+Find the average rating for each movie.
+
+Count the number of movies per release year.
+
+HAVING Clause Questions
+Get the genres that have more than 2 movies.
+
+Find the directors who have directed more than 1 movie.
+
+Show producers who have produced movies with a total box office collection exceeding ₹500,000,000.
+
+Display movies that have won more than 1 award.
+
+List movies where the average rating is greater than 8.
+
+Find actors who have worked in at least 2 movies.
+
+Get the composers who have composed music for more than 1 movie.
+
+Find the languages that have more than 5 movies.
+
+Show directors whose movies have earned an average box office collection of more than ₹300,000,000.
+
+List movies where the total box office collection per region exceeds ₹200,000,000.
+
+LIMIT Clause Questions
+Retrieve the top 3 movies based on box office collection.
+
+Show the latest 5 movies (most recent release dates).
+
+Get the first 10 actors in alphabetical order.
+
+List the top 5 highest-rated movies.
+
+Display the first 3 reviews from the reviews table.
+
+Get the top 2 movies with the highest number of awards.
+
+Show the top 5 movies with the highest budgets.
+
+Get the top 3 directors who directed the most movies.
+
+Show the top 10 movies ordered by rating in descending order.
+
+Retrieve the latest 5 awards given.
+
+LIKE Clause Questions
+Retrieve all movies where the title starts with 'Baahu'.
+
+Get all actors whose name starts with 'V'.
+
+Find all movies where the genre contains 'Drama'.
+
+Show all producers whose name ends with 'Raju'.
+
+Retrieve all directors whose name contains 'S' anywhere.
+
+Find all movies where the title ends with '2'.
+
+Get all awards where the award name contains 'National'.
+
+Retrieve all movies where the language is Telugu or Kannada using LIKE.
+
+Find all composers whose name contains 'i'.
+
+List all actors where the name has exactly 5 characters.
+
+Try solving these, and let me know if you want queries for another topic! 🚀
+
+
+
+
+
+
+
+You said:
+not other topics but combine them and give queries from this topics
+
+
+ChatGPT said:
+Here are some practice questions based on your Tollywood Movie Database, combining WHERE, ORDER BY, GROUP BY, HAVING, LIMIT, and LIKE:
+
+Basic WHERE and ORDER BY Queries
+Retrieve all movies released after 2015 and order them by release_date in descending order.
+
+Find all movies with a budget greater than 100,000,000 and order them by box office collection in descending order.
+
+Get all actors whose names start with "V" and order them alphabetically.
+
+Retrieve all movies in the Romance genre and order them by box office collection in descending order.
+
+Find movies where the title contains "Baahubali" and order them by release_date.
+
+Using LIKE with WHERE and ORDER BY
+Get all movies whose titles start with "K" and order them by box office collection in descending order.
+
+Find all actors whose nationality contains "Indian" and order them by debut_year.
+
+Retrieve music composers whose names contain "R" and order them by birth_date.
+
+Find all movies where the genre contains "Drama" and order them by release_date in descending order.
+
+List all producers whose names end with "a" and order them alphabetically.
+
+Using GROUP BY and HAVING with WHERE
+Find the total number of movies in each genre and display only those genres where more than 2 movies exist.
+
+Retrieve the total box office collection per language but show only those languages where the total box office collection is greater than 500,000,000.
+
+Find the total number of movies directed by each director, only showing directors who have made more than 1 movie.
+
+List all regions and their total box office collection, only showing regions where the collection is above 200,000,000.
+
+Find the average rating of each movie, showing only those movies with an average rating greater than 8.
+
+Combining GROUP BY, HAVING, ORDER BY, LIMIT
+Find the top 3 highest-earning directors by total box office collection and order them in descending order.
+
+Retrieve the top 5 movies with the highest number of awards.
+
+Get the top 3 actors who have acted in the most movies.
+
+Find the top 3 genres based on the total box office collection.
+
+List the top 2 producers who have produced the highest number of movies.
+
+These queries will give you good practice combining WHERE, ORDER BY, GROUP BY, HAVING, LIMIT, and LIKE! Let me know if you want SQL query examples for any of them
